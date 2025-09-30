@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple HTML & CSS Website</title>
+  <meta name="description" content="Single-file website made with only HTML and CSS" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SG</div>
+        <div>
+          <div style="font-weight:800">SimpleSite</div>
+          <div style="font-size:12px;color:var(--muted)">HTML + CSS only</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Beautiful single-file website<br><span style="color:var(--accent)">Made with only HTML & CSS</span></h1>
+        <p class="lead">A clean, responsive template you can copy, edit, and host anywhere — no scripts, no build step. Perfect for small projects, portfolios, and static pages.</p>
+
+        <a class="cta" href="#contact">Get in touch</a>
+
+        <div class="features" id="features">
+          <div class="feature">
+            <strong>Fast</strong>
+            <h3>Blazing load times</h3>
+            <p>Because it's a single static file, it loads instantly and works on any host.</p>
+          </div>
+
+          <div class="feature">
+            <strong>Responsive</strong>
+            <h3>Looks great everywhere</h3>
+            <p>Grid and flexible sizing make the layout adapt to phones and desktops.</p>
+          </div>
+
+          <div class="feature">
+            <strong>Accessible</strong>
+            <h3>Semantic markup</h3>
+            <p>Uses clean HTML5 structure so screen readers and search engines understand your content.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="meta"><div class="avatar">AS</div><div>
+            <div style="font-weight:800">Andrej</div>
+            <div style="font-size:13px;color:var(--muted)">Frontend tinkerer</div>
+          </div></div>
+          <div class="stat-grid">
+            <div class="stat"><strong>5+</strong><span style="color:var(--muted);font-size:12px">projects</span></div>
+            <div class="stat"><strong>HTML</strong><span style="color:var(--muted);font-size:12px">only</span></div>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
+
+        <div>
+          <div style="font-weight:700;margin-bottom:6px">Contact</div>
+          <form id="contact" onsubmit="return false;">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea rows="3" placeholder="Message (won't actually send)"></textarea>
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="card" style="margin-bottom:18px">
+      <h2 style="margin-top:0">About this template</h2>
+      <p style="color:var(--muted);margin-bottom:12px">This is intentionally small and dependency-free. Copy the HTML and drop it on any static host — GitHub Pages, Netlify, or your own server. Tweak colors, fonts, and text to make it yours.</p>
+
+      <div class="grid-2">
+        <div class="card" style="background:transparent;border:1px dashed rgba(255,255,255,0.03)">
+          <h3 style="margin:0 0 6px">Quick tips</h3>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Change the accent colors in <span class="kbd">:root</span>.</li>
+            <li>Replace the avatar/brand with your logo (an <code>&lt;img&gt;</code> tag).</li>
+            <li>Remove the form or wire it to a service if you want real submissions.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background:transparent;border:1px dashed rgba(255,255,255,0.03)">
+          <h3 style="margin:0 0 6px">License</h3>
+          <p style="margin:0;color:var(--muted)">Use it free for personal or commercial projects — attribution appreciated but not required.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Crafted with ❤️ using only HTML & CSS — built for speed and simplicity.
+    </footer>
+  </div>
+</body>
+</html>
