@@ -1,29 +1,32 @@
+.body {
+    background-color: #071025;
+}
+
 .card {
-    box-shadow: 5px 10px 18px #888888; 
     margin: 15px;
     padding: 15px;
 }
 
 .small-card {
-    border-radius: 5px;
-    box-shadow: 5px 10px 18px #888888;
+    border-radius: 15px;
     width: 10rem;   
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    background-color: #151d2f;
 }
 
 #info-card {
     border-radius: 5px;
-    box-shadow: 5px 10px 18px #888888;  
     margin: 15px;
     padding: 20px;
     display: block;
     justify-content: center;
     align-self: center;
+    background-color: #0c1629;
 }
 
 #navbarContainer {
-    width: 46%;
+    width: 49%;
 }
 
 .ASblock {
@@ -68,7 +71,7 @@
 }
 
 #info-card2 {
-    background-color: gray;
+    background-color: #101a2c;
     text-align: center;
     border-radius: 5px;
     display: block;
@@ -85,8 +88,8 @@
 }
 
 #small-card-text {
-    color: lightgrey;
     font-size: 10px;
+    color: #8d99af;
 }
 
 #contact-button {
@@ -99,4 +102,21 @@
 .contact-card-title {
     font-weight: 700;
     margin-top: 30px;
+}
+
+.form-control {
+    background-color: #0c1428; 
+    border: 1px solid #192235;
+}
+
+.form-control::placeholder {
+    color: #8d99af;
+}
+
+.form-control:focus {
+    background-color: #0c1428;
+}
+
+.btn {
+    border: 0;
 }
