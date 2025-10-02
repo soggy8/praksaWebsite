@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="styles2.css">
   </head>
 <header>
-  <nav class="navbar navbar-expand-md align-items-center justify-content-center bg-body">
-    <div class="container">
+  <nav class="navbar navbar-expand-md align-items-center bg-body">
+    <div class="container" id="navbarContainer">
       <div class="brand d-flex w-50 me-auto">
-        <div class="logo">SG</div>
+        <div>
+          <h1 class="logo">SG</h1>
+        </div>
         <div>
           <div style="font-weight:800">SimpleSite</div>
           <div style="font-size:12px;color:var(--muted)">HTML + CSS only</div>
@@ -33,46 +35,90 @@
     </div>
   </nav>
 </header>
-  <body>
+  <body class="body">
     <div class="container d-flex align-items-center justify-content-center">
       <div class="row">
         <div class="col-7 card">
           <div class="card-body">
-            <h2 class="card-title">
+            <h2 class="card-title" style="line-height: 40px;">
               Beautiful single-file website <br>
               Made with Bootstrap
             </h2>
             <p class="card-text">This is a simple example of a Bootstrap card.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn" id="main-card-button">Go somewhere</a>
           </div>
           <div class="container">
             <div class="row">
               <div class="col small-card">
-                <h6 class="card-title">
+                <h6 class="small-card-title">
                   Fast <br>
                   Blazing load times
                 </h6>
-                <p class="card-text">This is a simple example of a Bootstrap card.</p>
+                <p class="small-card-text">This is a simple example of a Bootstrap card. This is a simple example of a Bootstrap card.</p>
               </div>
               <div class="col small-card">
-                <h6 class="card-title">
+                <h6 class="small-card-title">
                   Responsive <br>
                   Looks great on any device
                 </h6>
-                <p class="card-text">This is a simple example of a Bootstrap card.</p>
+                <p class="small-card-text">This is a simple example of a Bootstrap card. This is a simple example of a Bootstrap card.</p>
               </div>
               <div class="col small-card">
-                <h6 class="card-title">
+                <h6 class="small-card-title">
                   Accessible <br>
                   Semantic markup
                 </h6>
-                <p class="card-text">This is a simple example of a Bootstrap card.</p>
+                <p class="small-card-text">This is a simple example of a Bootstrap card. This is a simple example of a Bootstrap card.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col align-items-center" id="info-card">
-          <h1>placeholder</h1>
+        <div class="col" id="info-card">
+          <div class="row">
+            <div class="col">
+              <h1 class="ASblock">AS</h1>
+            </div>
+            <div class="col">
+              <h6 class="card-title">
+                Andrej
+              </h6>
+              <p class="card-text" style="font-size: 12px;">
+                Frontend <br>
+                tinkerer
+              </p>
+            </div>
+            <div class="col">
+              <div id="info-card2">
+                <h6 class="card-title" id="small-card-title">
+                5+
+              </h6>
+              <p id="small-card-text">projects</p>
+              </div>
+            </div>
+            <div class="col">
+              <div id="info-card2">
+                <h6 class="card-title" id="small-card-title">
+                  HTML
+                </h6>
+                <p id="small-card-text">only</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 class="contact-card-title">Contact</h6>
+            <div class="form-group">
+              <input type="text" class="form-control" id="Your name" style="margin-top: 5px; margin-bottom: 10px;" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="Your email" style="margin-top: 10px; margin-bottom: 10px;" placeholder="Your email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message (won't actually send)" style="margin-bottom: 10px;"></textarea>
+            </div>
+            <div>
+              <button type="button" class="btn" id="contact-button">Send message</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
