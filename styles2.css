@@ -33,7 +33,7 @@
 }
 
 #navbarContainer {
-    width: 49%;
+    width: 50%;
 }
 
 .ASblock {
@@ -126,4 +126,8 @@
 
 .btn {
     border: 0;
+}
+
+#container {
+    width: 50%;
 }
